@@ -1,0 +1,20 @@
+<div>
+  <h2>Payment Details</h2>
+  <div>
+    <label>Payment Mode:</label>
+    <input type="text" [(ngModel)]="form.data.paymentMode" name="paymentMode" >
+    
+  </div>
+  <div>
+    
+    <label>Payment Amount:</label>
+    <input type="text" [(ngModel)]="form.data.paymentAmount" name="paymentAmount" >
+  </div>
+  <div>
+    <label>Payment Status:</label>
+    <input type="text" [(ngModel)]="form.data.paymentStatus" name="paymentStatus" >
+  </div>
+  <div>
+    <button (click)="save()">Save</button>
+  </div>
+</div>

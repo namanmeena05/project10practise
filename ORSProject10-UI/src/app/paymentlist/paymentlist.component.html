@@ -1,0 +1,22 @@
+<p>signup works!</p>
+<table>
+    <tr>
+        
+        <td><button (click)="search()">search</button></td>
+    </tr>
+    
+</table>
+<table border="1" width="100%">
+    <tr >
+        <th>paymentMode</th>
+        <th>paymentAmount</th>
+        <th>paymentStatus</th>
+        <th>edit</th>
+          </tr>
+    <tr *ngFor="let m of form.list">
+        <td>{{m.paymentMode}}</td>
+        <td>{{m.paymentAmount}}</td>
+        <td>{{m.paymentStatus}}</td>
+        <td><button (click)="forward('/payment/'+m.id)">edit</button></td>
+    </tr>
+</table>
